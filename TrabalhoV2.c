@@ -21,7 +21,7 @@ void troca(int *a, int *b) {
     *b = temp;
 }
 
-// Função para particionar o vetor para quicksort
+// Função para particionar o vetor para ordenar
 int particiona(int cheques[], int inicio, int fim) {
     int pivo = cheques[fim];
     int i = inicio - 1;
@@ -35,7 +35,7 @@ int particiona(int cheques[], int inicio, int fim) {
     return i + 1;
 }
 
-// Função para ordenar usando quicksort
+// Função para ordenar
 void ordenar(int cheques[], int inicio, int fim) {
     if (inicio < fim) {
         int p = particiona(cheques, inicio, fim);
